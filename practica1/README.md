@@ -11,6 +11,7 @@ Se practica la interacción con el sistema operativo mediante el interprete de c
 - vim
 - gcc
 - JDK
+- Python
 - Bash scripting
 - Git y GitHub
 - Markdown
