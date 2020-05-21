@@ -1,10 +1,30 @@
 ## Practica 1. Interprete de comandos.
 
-### Objetivo.
+### Resumen
 
-Que el alumno practique la interacción con el sistema operativo mediante el interprete de comandos.
+Se practica la interacción con el sistema operativo mediante el interprete de comandos.
 
-### Actividades preliminares.
+### Desarrollo
 
+- Shell Bash
+- stdin, stdout, stderr
+- vim
+- gcc
+- JDK
+- Bash scripting
+- Git y GitHub
+- Markdown
 
-### Enunciado
+### Resultados
+
+Resultados...
+
+### Discusión
+
+![filesystemLinux](./imgs/filesystemLinux.png "filesystemLinux")
+
+### Conclusiones
+
+Conclusiones...
+
+:rocket:
