@@ -8,8 +8,8 @@ int main(int argc, char *argv[])
 {
     int op;
     int cont=0,i,status;
-    char *argsv[] = {"/usr/bin/xterm", "-title", "Ejecutando exev", "-fn", "9x15", "-e", "./hola.out", "Jorge", NULL};
-    char *argsvp[] = {"xterm", "-title", "Ejecutando exevp", "-fn", "9x15", "-e", "./hola.out", "Jorge", NULL};
+    char *argsv[] = {"/usr/bin/xterm", "-title", "Ejecutando exev", "-fn", "9x15", "-e", "./hola", "Jorge", NULL};
+    char *argsvp[] = {"xterm", "-title", "Ejecutando exevp", "-fn", "9x15", "-e", "./hola", "Jorge", NULL};
 
     do
     {
@@ -26,12 +26,12 @@ int main(int argc, char *argv[])
         case 1:
             cont++;
             if( fork()==0 ) //se crea un proceso hijo para ejecutar el programa (será sobreescrito)
-                execl("/usr/bin/xterm", "/usr/bin/xterm", "-title", "Ejecutando exec", "-fn", "9x15", "-e", "./hola.out", "Jorge", NULL);
+                execl("/usr/bin/xterm", "/usr/bin/xterm", "-title", "Ejecutando exec", "-fn", "9x15", "-e", "./hola", "Jorge", NULL);
             break;
         case 2:
             cont++;
             if( fork()==0 )
-                execlp("xterm", "xterm", "-title", "Ejecutando exec", "-fn", "9x15", "-e", "./hola.out", "Jorge", NULL);
+                execlp("xterm", "xterm", "-title", "Ejecutando exec", "-fn", "9x15", "-e", "./hola", "Jorge", NULL);
             break;
         case 3:
             cont++;
